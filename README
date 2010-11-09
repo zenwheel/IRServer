@@ -1,12 +1,12 @@
 A server to generate IR commands from an HTTP request.  The interface is simply:
 
-http://<host>/send?freq=<##>&data=<list>
+http://host/send?freq=##&data=list
 
 where ## is the carrier frequency of the IR signal in kHz (i.e. 38)
 and list is a comma delimited list of on/off signal timing in microseconds (i.e. 9000,4000,600,600,300,600...)
 
-This makes use of Ken Shirriff's IRremote library: http://github.com/zenwheel/Arduino-IRremote
+This makes use of Ken Shirriff's IRremote library: http://github.com/zenwheel/Arduino-IRremote (my fork) or http://github.com/shirriff/Arduino-IRremote (original)
 and webduino for the web server: http://code.google.com/p/webduino/
 
-I've also written a module for lirc which can perform the HTTP request from a lirc device driver: http://github.com/zenwheel/lirc
+I've also written a module for lirc which can perform the HTTP request from a lirc device driver: http://github.com/zenwheel/lirc (fork of lirc 0.8.7 with my changes)
 
